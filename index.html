@@ -94,15 +94,33 @@
         />
 
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
+        <!-- PC header -->
         <header class="fixed-header">
             <div class="content">
                 <!-- Navbar -->
                 <nav class="navbar">
+                    <!-- Tablet/PC -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <!-- Logo -->
                     <a href=""
-                        ><img src="./assets/img/logo.svg" alt="Besnik."
+                        ><img
+                            src="./assets/img/logo.svg"
+                            alt="Besnik."
+                            class="logo"
                     /></a>
 
                     <!-- Navigation-->
@@ -112,6 +130,10 @@
                         <li><a href="#Services">Services</a></li>
                         <li><a href="#Resources">Resources</a></li>
                         <li><a href="#Contact">Contact</a></li>
+                        <li class="show-on-mobile seperate">
+                            <a href="#!">Sign In</a>
+                        </li>
+                        <li class="show-on-mobile"><a href="#!">Sign Up</a></li>
                     </ul>
 
                     <!-- Action -->
@@ -120,6 +142,37 @@
                         <a href="#!" class="btn action-btn">Sign up</a>
                     </div>
                 </nav>
+            </div>
+        </header>
+
+        <!-- Tablets/mobile header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href=""><img src="./assets/img/logo.svg" alt="Besnik." /></a>
+
+                <!-- Navigation-->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#feature">Feature</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Resources">Resources</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li class="show-on-mobile seperate">
+                        <a href="#!">Sign In</a>
+                    </li>
+                    <li class="show-on-mobile"><a href="#!">Sign Up</a></li>
+                </ul>
             </div>
         </header>
         <main id="home">
